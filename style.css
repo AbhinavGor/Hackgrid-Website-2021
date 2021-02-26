@@ -1,16 +1,67 @@
 @font-face {
-    font-family: SF;
-    src: url(Assets/FontsFree-Net-SFProText-Regular-1.ttf);
-    font-weight: bold;
-  }
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+	font-family: SF;
+	src: url(./Assets/FontsFree-Net-SFProText-Regular-1.ttf);
+	font-weight: bold;
 }
 
-.home {
-    height: 100vh;
-    background-color: #000000;
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	background-color: #000000;
+	font-family: SF;
+}
+
+.timeline {
+	height: 100vh;
+	width: 94vw;
+	background-color: #000000;
+	color: #ffffff;
+	margin-top: 10%;
+	margin-left: 4%;
+	font-weight: bolder;
+}
+
+.sectionHead {
+	font-size: 4em !important;
+	font-weight: 900 !important;
+}
+
+.timelineBody {
+	display: flex;
+}
+
+.timelineContent {
+	margin-top: 4%;
+	width: 60%;
+}
+
+.timelineContent p {
+	margin-top: 2%;
+	font-size: 24px;
+}
+
+.badges {
+	margin-top: 10%;
+}
+
+.timelinePhone img {
+	margin-top: -20%;
+	/* margin-right: 14%; */
+}
+
+section {
+	height: 100vh;
+	width: 94vw;
+	background-color: #000000;
+	color: #ffffff;
+	margin-left: 4%;
+	font-weight: bolder;
+}
+
+.sponsors {
+}
+
+.align-center {
+	text-align: center;
 }
