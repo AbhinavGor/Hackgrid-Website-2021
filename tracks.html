@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script type="text/javascript" src="raphael.min.js"></script>
+    <script type="text/javascript" src="raphael.icons.min.js"></script>
+    <script type="text/javascript" src="wheelnav.min.js"></script>
+  </head>
+  <style>
+    body{
+      background: black;
+    }
+    #piemenu > svg {
+      width: 100%;
+      height: 100%;
+     left: -53%;
+     
+    }
+    #piemenu {
+      height: 700px;
+      width: 700px;
+     
+    
+    }
+    @media (max-width: 400px) {
+      #piemenu {
+        height: 300px;
+        width: 300px;
+      }
+    }
+
+    [class|="wheelnav-piemenu-slice-basic"] {
+      fill:#465463;
+     
+     
+    }
+    [class|="wheelnav-piemenu-slice-selected"] {
+      fill: #465463;
+      stroke: none;
+       stroke: #C0EBFF;
+    stroke-width: 2px;
+    }
+    [class|="wheelnav-piemenu-slice-hover"] {
+      fill: #465463;
+      stroke: none;
+      fill-opacity: 0.77;
+      cursor: pointer;
+    }
+
+    [class|="wheelnav-piemenu-title-basic"] {
+      fill: #7489AD;
+      stroke: none;
+      
+    }
+    [class|="wheelnav-piemenu-title-selected"] {
+      fill: #C0EBFF;
+      stroke: none;
+    }
+    [class|="wheelnav-piemenu-title-hover"] {
+      fill: #C0EBFF;
+      stroke: none;
+      cursor: pointer;
+    }
+
+    .wheelnav-piemenu-spreader-in,
+    .wheelnav-piemenu-spreader-out {
+      fill: #C0EBFF;
+      stroke: #C0EBFF;
+      stroke-width: 2;
+      cursor: pointer;
+    }
+    .wheelnav-piemenu-spreadertitle-in,
+    .wheelnav-piemenu-spreadertitle-out {
+      fill: #eee;
+      stroke: #444;
+      cursor: pointer;
+    }
+
+    .wheelnav-piemenu-marker {
+      stroke: #C0EBFF;
+      stroke-width: 2;
+    }
+    
+  </style>
+  <body>
+    <div
+      id="piemenu"
+      data-wheelnav
+      data-wheelnav-slicepath="DonutSlice"
+      data-wheelnav-spreader
+      data-wheelnav-spreaderpath="PieSpreader"
+      data-wheelnav-marker
+      data-wheelnav-markerpath="PieLineMarker"
+      data-wheelnav-rotateoff
+      data-wheelnav-navangle="75"
+      data-wheelnav-titleheight="20"
+      data-wheelnav-cssmode
+      data-wheelnav-init
+      
+    >
+      <div
+        data-wheelnav-navitemicon="book"
+        onmouseup='alert("Place your logic here.");'
+      ></div>
+      <div
+        data-wheelnav-navitemimg="http://pmg.softwaretailoring.net/img/pmg_favicon.png"
+        onmouseup='alert("Place your logic here.");'
+      ></div>
+      <div
+        data-wheelnav-navitemicon="checkbox"
+        onmouseup='alert("Place your logic here.");'
+      ></div>
+      <div
+        data-wheelnav-navitemicon="checked"
+        onmouseup='alert("Place your logic here.");'
+      ></div>
+      <div
+        data-wheelnav-navitemicon="star"
+        onmouseup='alert("Place your logic here.");'
+      ></div>
+      <!-- <div
+        data-wheelnav-navitemicon="icons"
+        onmouseup='alert("Place your logic here.");'
+      ></div>
+       <div
+        data-wheelnav-navitemicon="icons"
+        onmouseup='alert("Place your logic here.");'
+      ></div> -->
+    </div>
+  </body>
+  <script>
+    var piemenu = new wheelnav("piemenu");
+    piemenu.spreaderInTitle = icon.plus;
+    piemenu.spreaderOutTitle = icon.cross;
+    piemenu.spreaderRadius =  50;
+    piemenu.clockwise = false;
+    piemenu.wheelRadius = piemenu.wheelRadius * 0.83;
+    piemenu.navItemsContinuous = true;
+    piemenu.sliceAngle = 180/5;
+  
+    piemenu.createWheel();
+  
+   
+  </script>
+</html>
