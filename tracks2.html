@@ -9,107 +9,13 @@
     <script type="text/javascript" src="raphael.min.js"></script>
     <script type="text/javascript" src="raphael.icons.min.js"></script>
     <script type="text/javascript" src="wheelnav.min.js"></script>
+    <link rel="stylesheet" href="tracks.css">
   </head>
-  <style>
-    body {
-      background: black;
-      color: aliceblue;
-      display: flex;
-      flex-wrap: wrap;
-    }
-    #piemenu > svg {
-      width: 120%;
-      height: 120%;
-      left: -63%;
-      margin: 0;
-    }
-    #piemenu {
-      height: 500px;
-      width: 500px;
   
-    }
-    @media (max-width: 400px) {
-      #piemenu {
-        height: 300px;
-        width: 300px;
-      }
-    }
-
-    [class|="wheelnav-piemenu-slice-basic"] {
-      fill: #465463;
-    }
-    [class|="wheelnav-piemenu-slice-selected"] {
-      fill: #465463;
-      stroke: none;
-      stroke: #c0ebff;
-      stroke-width: 2px;
-    }
-    [class|="wheelnav-piemenu-slice-hover"] {
-      fill: #465463;
-      stroke: none;
-      fill-opacity: 0.77;
-      cursor: pointer;
-    }
-
-    [class|="wheelnav-piemenu-title-basic"] {
-      fill: #7489ad;
-      stroke: none;
-    }
-    [class|="wheelnav-piemenu-img-selected"] {
-      fill: #c0ebff;
-      stroke: none;
-    }
-    [class|="wheelnav-piemenu-title-hover"] {
-      fill: #c0ebff;
-      stroke: none;
-      cursor: pointer;
-    }
-
-    .wheelnav-piemenu-spreader-in,
-    .wheelnav-piemenu-spreader-out {
-      fill: #c0ebff;
-      stroke: #c0ebff;
-      stroke-width: 2;
-    }
-    .wheelnav-piemenu-spreadertitle-in,
-    .wheelnav-piemenu-spreadertitle-out {
-      fill: #eee;
-      stroke: #444;
-    }
-
-    .wheelnav-piemenu-marker {
-      stroke: #c0ebff;
-      stroke-width: 2;
-    }
-    .container1{
-        padding: 5%;
-    max-width: 850px;
-    }
-    .img1{
-        height: 50px;
-        width: 50px;
-        margin-right: 80px;
-        
-    }
-    .rtd{
-        width: 700px;
-      
-        text-align: right;
-    }
-    a{
-        text-decoration: none;
-        color: blue;
-    }
-    a:hover{
-        cursor: pointer;
-        color: darkblue;
-        transition: 0.5s;
-    }
-  </style>
   <body>
-   
-      
-    <div
+      <h1 class="heading">Tracks</h1>
+   <div class="main">
+          <div
       id="piemenu"
       data-wheelnav
       data-wheelnav-slicepath="DonutSlice"
@@ -167,11 +73,15 @@
     </div>
     <div class="container1">
         <table>
-            <tr><td><a href="#">Link 1</a>  <a href="#">Link 2</a>  <a href="#">Link 3</a></td><td class="rtd"><img id="img1" class="img1" src="https://res.cloudinary.com/dvmabxibf/image/upload/v1616079640/ic_lightbulb_outline_48px_2_dlx0je.png"></td></tr>
+            <tr><td class="ltd"><a href="#">Link 1</a>  <a href="#">Link 2</a>  <a href="#">Link 3</a></td><td class="rtd"><img id="img1" class="img1" src="https://res.cloudinary.com/dvmabxibf/image/upload/v1616079640/ic_lightbulb_outline_48px_2_dlx0je.png"></td></tr>
         </table>
         <h1 id="domain">Open <br> Innovation</h1>
         <p id="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, asperiores deserunt iusto magni voluptates saepe incidunt aliquam quas excepturi provident illum sit inventore ipsa id facilis officia nulla! Quis, asperiores.</p>
     </div>
+
+   </div>
+      
+ 
   </body>
   <script>
     var piemenu = new wheelnav("piemenu");
@@ -188,27 +98,27 @@
       function changeData(id){
           if(id==1){
               document.getElementById('domain').innerHTML="Open <br> Innovation";
-              document.getElementById('desc').innerText="dfjnevf efjnfcnsdkjfvjf qdcnjifenvn ";
+              document.getElementById('desc').innerText="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  ";
               document.getElementById('img1').setAttribute('src','https://res.cloudinary.com/dvmabxibf/image/upload/v1616079640/ic_lightbulb_outline_48px_2_dlx0je.png')
           }
           else if(id==2){
             document.getElementById('domain').innerHTML="Future <br> Technology";
-              document.getElementById('desc').innerText="dfjnevf efjnfcnsdkjfvjf qdcnjifenvn "  
+              document.getElementById('desc').innerText="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  "  
               document.getElementById('img1').setAttribute('src','https://res.cloudinary.com/dvmabxibf/image/upload/v1616079640/ic_healing_48px_1_asccch.png')
           }
             else if(id==3){
             document.getElementById('domain').innerText="Agriculture";
-              document.getElementById('desc').innerText="dfjnevf efjnfcnsdkjfvjf qdcnjifenvn "  ;
+              document.getElementById('desc').innerText="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  "  ;
                document.getElementById('img1').setAttribute('src','https://res.cloudinary.com/dvmabxibf/image/upload/v1616079640/handout_2_nfxpkm.png')
           }
             else if(id==4){
             document.getElementById('domain').innerHTML="Social <br> Responsibility";
-              document.getElementById('desc').innerText="dfjnevf efjnfcnsdkjfvjf qdcnjifenvn "  
+              document.getElementById('desc').innerText="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  "  
                document.getElementById('img1').setAttribute('src','https://res.cloudinary.com/dvmabxibf/image/upload/v1616079640/handout_1_wfnqol.png')
           }
             else if(id==5){
             document.getElementById('domain').innerText="Healthcare";
-              document.getElementById('desc').innerText="dfjnevf efjnfcnsdkjfvjf qdcnjifenvn "  
+              document.getElementById('desc').innerText="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  "  
                document.getElementById('img1').setAttribute('src','https://res.cloudinary.com/dvmabxibf/image/upload/v1616079640/ic_healing_48px_2_ma7kvf.png')
           }
       }
