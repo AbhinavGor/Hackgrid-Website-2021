@@ -1,18 +1,20 @@
 @font-face {
-    font-family: SF;
-    src: url(Assets/FontsFree-Net-SFProText-Regular-1.ttf);
-    font-weight: bold;
-  }
+	font-family: SF;
+	src: url(./Assets/FontsFree-Net-SFProText-Regular-1.ttf);
+	font-weight: bold;
+} 
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Poppins", sans-serif;
 }
 
-body{
-    font-family: SF;
-    scroll-behavior: smooth;
+body {
+	background-color: #000000;
+	font-weight: 100;
+  scroll-behavior: smooth;
 }
 
 #myBtn {
@@ -249,4 +251,160 @@ ul li a:hover {
 
 .container .box:nth-child(8) {
     grid-column: span 1;
+}
+
+/*Abhinav's CSS Part*/
+
+.timeline {
+	height: 100%;
+	background-color: #000000;
+	color: #ffffff;
+	margin-top: 10%;
+	margin-left: 4%;
+	font-weight: bolder;
+}
+
+.sectionHead {
+	font-size: 4em !important;
+	font-weight: 900 !important;
+}
+
+.timelineBody {
+	display: flex;
+}
+
+.timelineContent {
+	margin-top: 4%;
+	width: 60%;
+}
+
+.timelineContent p {
+	margin-top: 2%;
+	font-size: 24px;
+}
+
+.badges {
+	margin-top: 10%;
+}
+
+.timelinePhone img {
+	margin-top: -20%;
+	/* margin-right: 14%; */
+}
+=======
+section {
+	height: 100%;
+	width: 94vw;
+	background-color: #000000;
+	color: #ffffff;
+	margin-left: 4%;
+	font-weight: bolder;
+}
+
+.align-center {
+	text-align: center;
+}
+
+.faqCards {
+	width: fit-content;
+	height: fit-content;
+	overflow-y: hidden;
+	margin: 0 auto;
+	flex-direction: row;
+	margin-top: 4%;
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+}
+
+.faqCard {
+	width: 30% !important;
+	color: #fbaabf;
+	background-color: #6a4d4d !important;
+	border-radius: 30px;
+	margin: 4%;
+	padding: 4%;
+	flex: 0 0 auto;
+}
+
+.faqCards::-webkit-scrollbar {
+	display: none;
+}
+.cardHead {
+	font-size: 2.2em;
+	text-align: left;
+	padding: 2%;
+}
+
+.cardContent {
+	padding: 2%;
+	text-align: left;
+}
+
+@media screen and (max-width: 480px) {
+	.timelinePhone img {
+		display: none;
+	}
+	.faqCard {
+		/* display: none; */
+	}
+	.sectionHead {
+		font-size: 3em !important;
+		text-align: center;
+		font-weight: bold !important;
+	}
+	.timeline {
+		align-items: center;
+		text-align: center;
+	}
+	.timelineBody {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		justify-content: space-around;
+	}
+	.timelineContent p {
+		font-size: 1.2em !important;
+		width: 100%;
+		padding: 20px 0;
+		text-align: justify !important;
+	}
+	.badges {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.badges img {
+		width: 90%;
+		padding: 4%;
+		height: auto !important;
+	}
+
+	.faqCards {
+		width: fit-content;
+		height: fit-content;
+		overflow-y: hidden;
+		margin: 0 auto;
+		flex-direction: column;
+		margin-top: 4%;
+		display: flex;
+		flex-wrap: nowrap;
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+	}
+
+	.faqCard {
+		width: 90% !important;
+		color: #fbaabf;
+		background-color: #6a4d4d !important;
+		border-radius: 30px;
+		margin: 4%;
+		padding: 4%;
+		flex: 0 0 auto;
+	}
+
+	.faqCards::-webkit-scrollbar {
+		display: none;
+	}
 }
