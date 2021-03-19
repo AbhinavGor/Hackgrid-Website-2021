@@ -8,12 +8,15 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	background-color: #000000;
 	font-family: SF;
 }
 
+body {
+	background-color: #000000;
+}
+
 .timeline {
-	height: 100vh;
+	height: 100%;
 	width: 94vw;
 	background-color: #000000;
 	color: #ffffff;
@@ -51,7 +54,7 @@
 }
 
 section {
-	height: 100vh;
+	height: 100%;
 	width: 94vw;
 	background-color: #000000;
 	color: #ffffff;
@@ -59,9 +62,83 @@ section {
 	font-weight: bolder;
 }
 
-.sponsors {
-}
-
 .align-center {
 	text-align: center;
+}
+
+.faqCards {
+	width: fit-content;
+	height: fit-content;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
+
+.faqCard {
+	width: 60% !important;
+	color: #fbaabf;
+	background-color: #6a4d4d !important;
+	border-radius: 30px;
+	margin: 4%;
+	padding: 4%;
+	flex: 0 0 auto;
+}
+
+.faqCards {
+	margin-top: 4%;
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+}
+
+.faqCards::-webkit-scrollbar {
+	display: none;
+}
+.cardHead {
+	font-size: 2.2em;
+	text-align: left;
+	padding: 2%;
+}
+
+.cardContent {
+	padding: 2%;
+	text-align: left;
+}
+
+@media screen and (max-width: 480px) {
+	.timelinePhone img {
+		display: none;
+	}
+	.faqCard {
+		display: none;
+	}
+	.sectionHead {
+		font-size: 1em !important;
+	}
+	.timelineContent {
+		font-size: 1em !important;
+	}
+}
+
+.scrolling-wrapper {
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+}
+
+.card {
+	flex: 0 0 auto;
+}
+
+.scrolling-wrapper {
+	-webkit-overflow-scrolling: touch;
+}
+
+.scrolling-wrapper::-webkit-scrollbar {
+	display: none;
 }
