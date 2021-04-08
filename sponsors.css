@@ -1,0 +1,70 @@
+@font-face {
+  font-family: SF;
+  src: url(Assets/FontsFree-Net-SFProText-Regular-1.ttf);
+}
+
+* {
+  font-family: SF;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: white;
+    background-color: #000000;
+}
+.heading {
+  text-align: center;
+  padding: 2% 0;
+  font-size: 300%;
+  font-weight: bolder;
+}
+.sponsors{
+    height: 100vh;
+}
+
+.items {
+      width: 80%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10%;
+
+}
+
+
+.card1 {
+width: 31.33%;
+    text-align: center;
+    margin: 3% 1%;
+}
+.card1 img:hover{
+  cursor: pointer;
+  transition: 1s;
+}
+.card1 img {
+  max-width: 20rem;
+    max-height: 20rem;
+}
+
+@media only screen and (min-width: 321px) and (max-width: 760px){
+     .card1 img{
+    max-width: 15rem;
+    max-height: 15rem;
+}
+
+	.card1 {
+	  width: 100%;
+	  margin: 15% 0;
+	}  
+}
+
+@media only screen and (min-width: 761px) and (max-width: 1224px) {
+	.card1 img {
+	  max-width: 15rem;
+	  max-height: 15rem;
+	}
+	.card1 {
+	  width: 50%;
+	  margin: 8% 0;
+	}
+}
