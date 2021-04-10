@@ -8,6 +8,10 @@
      <link rel="icon" type="image/png" href="Assets/favicon logo.png">
      <script src="https://kit.fontawesome.com/e4e8218dda.js" crossorigin="anonymous"></script>
      <script src="script.js" async></script>
+       <script type="text/javascript" src="raphael.min.js"></script>
+    <script type="text/javascript" src="raphael.icons.min.js"></script>
+    <script type="text/javascript" src="wheelnav.min.js"></script>
+
      <title>Hackgrid 2021</title>
  </head>
  <body>
@@ -17,7 +21,7 @@
             <div class="logo">
                 <img class="adg-logo" src="Assets/adglogo2 1.png" alt="ADG Logo" title="ADG Logo">
             </div>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="#">ABOUT US</a></li>
                 <li><a href="#">TRACKS</a></li>
                 <li><a href="#">TIMELINE</a></li>
@@ -25,9 +29,14 @@
                 <li><a href="#">FAQS</a></li>
                 <li><a href="#">CONTACT US</a></li>
             </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </nav>
         <div class="hackgrid-img">
-            <img class="hackgrid" src="Assets/HackgridChip-Recovered2.png" alt="Hackgrid" title="Hackgrid">
+            <img class="hackgrid" src="Assets/Group 762.png" alt="Hackgrid" title="Hackgrid">
         </div>
         <div class="register">
             <a href="#" class="register-btn">Register Now</a>
@@ -100,5 +109,300 @@
             </div>
         </div>
     </section>
+    <section class="tracks">
+        <h1 class="heading">Tracks</h1>
+   <div class="main">
+          <div
+      id="piemenu"
+      data-wheelnav
+      data-wheelnav-slicepath="DonutSlice"
+      data-wheelnav-spreaderpath="PieSpreader"
+      data-wheelnav-spreader
+      data-wheelnav-marker
+      data-wheelnav-markerpath="PieLineMarker"
+      data-wheelnav-navangle="0"
+      data-wheelnav-titleheight="30"
+      data-wheelnav-cssmode
+      data-wheelnav-init
+    >
+      <div
+        data-wheelnav-navitemimg="https://res.cloudinary.com/dvmabxibf/image/upload/v1616079640/ic_lightbulb_outline_48px_2_dlx0je.png"
+        onmouseup='changeData(1)'
+      ></div>
+      <div
+        data-wheelnav-navitemimg="https://res.cloudinary.com/dvmabxibf/image/upload/v1616079640/ic_healing_48px_1_asccch.png"
+        onmouseup='changeData(2);'
+      ></div>
+      <div
+        data-wheelnav-navitemimg="https://res.cloudinary.com/dvmabxibf/image/upload/v1616079640/handout_2_nfxpkm.png"
+        onmouseup='changeData(3)'
+      ></div>
+      <div
+        data-wheelnav-navitemimg="https://res.cloudinary.com/dvmabxibf/image/upload/v1616079640/handout_1_wfnqol.png"
+        onmouseup='changeData(4)'
+      ></div>
+
+      <div
+        data-wheelnav-navitemimg="https://res.cloudinary.com/dvmabxibf/image/upload/v1616079640/ic_healing_48px_2_ma7kvf.png"
+        onmouseup='changeData(5)'
+      ></div>
+         <div
+        data-wheelnav-navitemimg="https://res.cloudinary.com/dvmabxibf/image/upload/v1616079640/ic_lightbulb_outline_48px_2_dlx0je.png"
+        onmouseup='changeData(1)'
+      ></div>
+      <div
+        data-wheelnav-navitemimg="https://res.cloudinary.com/dvmabxibf/image/upload/v1616079640/ic_healing_48px_1_asccch.png"
+        onmouseup='changeData(2);'
+      ></div>
+      <div
+        data-wheelnav-navitemimg="https://res.cloudinary.com/dvmabxibf/image/upload/v1616079640/handout_2_nfxpkm.png"
+        onmouseup='changeData(3)'
+      ></div>
+      <div
+        data-wheelnav-navitemimg="https://res.cloudinary.com/dvmabxibf/image/upload/v1616079640/handout_1_wfnqol.png"
+        onmouseup='changeData(4)'
+      ></div>
+
+      <div
+        data-wheelnav-navitemimg="https://res.cloudinary.com/dvmabxibf/image/upload/v1616079640/ic_healing_48px_2_ma7kvf.png"
+        onmouseup='changeData(5)'
+      ></div>
+    </div>
+    <div class="container1">
+        <table>
+            <tr><td class="ltd"><a href="#">Link 1</a>  <a href="#">Link 2</a>  <a href="#">Link 3</a></td><td class="rtd"><img id="img1" class="img1" src="https://res.cloudinary.com/dvmabxibf/image/upload/v1616079640/ic_lightbulb_outline_48px_2_dlx0je.png"></td></tr>
+        </table>
+        <h1 id="domain">Open <br> Innovation</h1>
+        <p id="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, asperiores deserunt iusto magni voluptates saepe incidunt aliquam quas excepturi provident illum sit inventore ipsa id facilis officia nulla! Quis, asperiores.</p>
+    </div>
+
+   </div>
+    </section>
+     <section class="timeline">
+        <h1 class="sectionHead">Timeline</h1>
+        <div class="timelineBody">
+            <div class="timelineContent">
+                <p>Download the Hackgrid App to get further updates and Information about the Speakers and Events Happening....</p>
+                <p>Download the Hackgrid App to get further updates and Information about the Speakers and Events Happening....</p>
+                <p>Download the Hackgrid App to get further updates and Information about the Speakers and Events Happening....</p>
+    
+                <div class="badges">
+                    <img src="./Assets/app_store_badge.png" />
+                    <img src="./Assets/play_store_badge.png" />
+                </div>
+            </div>
+            <div class="timelinePhone">
+                <img src="./Assets/timeline_iphone.png" />
+            </div>
+        </div>
+    </section>
+       <section class="sponsors">
+      <div class="heading">Sponsors</div>
+      <div class="items">
+        <div class="card1" ><img src="Assets/docker_logo.png"></div>
+        <div class="card1" ><img src="Assets/docker_logo.png"></div>
+        <div class="card1" ><img src="Assets/docker_logo.png"></div>
+        <div class="card1" ><img src="Assets/docker_logo.png"></div>
+        <div class="card1" ><img src="Assets/docker_logo.png"></div>
+        <div class="card1" ><img src="Assets/docker_logo.png"></div>
+        <div class="card1" ><img src="Assets/docker_logo.png"></div>
+      </div>
+    </section>
+       <section class="faq align-center" id="faq">
+        <h1 class="sectionHead">Frequently Asked Questions</h1>
+        <div class="faqCards">
+            <div class="faqCard">
+                <div class="cardHead">Question 1</div>
+                <div class="cardContent">""Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
+            </div>
+            <div class="faqCard">
+                <div class="cardHead">Question 1</div>
+                <div class="cardContent">""Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
+            </div>
+            <div class="faqCard">
+                <div class="cardHead">Question 1</div>
+                <div class="cardContent">""Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
+            </div>
+            <div class="faqCard">
+                <div class="cardHead">Question 1</div>
+                <div class="cardContent">""Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
+            </div>
+            <div class="faqCard">
+                <div class="cardHead">Question 1</div>
+                <div class="cardContent">""Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
+            </div>
+            <div class="faqCard">
+                <div class="cardHead">Question 1</div>
+                <div class="cardContent">""Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
+            </div>            
+        </div>
+    </section>
+    <section class="footer1">
+            <!-- Footer Start -->
+		<div class="footer" id="footer">
+              <style scoped>
+        @import "footer.css";
+    </style>
+    	<div class="inner-footer">
+        <div class="footer-items">
+
+          <!--About ADG-->
+          <div class="foot1">
+      			<img class="logo-footer" src="Assets/adglogo2 1.png" alt="ADG Logo" style="height: auto; width: 120px; padding-right: 5%;">
+						<img class="logo-footer" src="Assets/vitvlr.png" alt="VIT Logo" style="height: auto; width: 150px;">	
+            <p>
+						<br>
+						  Apple Developers Group (ADG) is a name synonymous with excellence, simplicity and dedication. 
+						  It is a registered student community at VIT, Vellore established under the Apple University program. 
+						  A coterie of talented minds seeking not just success but perfection.
+     				</p>
+        	</div>
+        </div>
+        
+        <div class="footer-items">
+
+          <!--Quick Links-->
+          <div class="foot2">
+            <h1 class="headQL">Quick Links</h1>
+               <div class="border">
+                  <ul class="social qlinks">
+                    <a href="index"><li>Home</li></a>
+                      <a href="about"><li>About</li></a>
+                      <a href="partners"><li>Partners</li></a>
+                      <a href="events"><li>Events</li></a>
+                      <a href="projects"><li>Projects</li></a>
+                      <a href="team"><li>Team</li></a>
+                      <a href="domains"><li>Domains</li></a>
+                      <a href="contact"><li>Contact Us</li></a>
+                  </ul>
+                </div>
+            </div>
+        </div>
+	
+	      <div class="footer-items">
+
+          <!--Socials-->
+          <div class="foot3">
+						<!-- <h1 class="headQL">Stay Connected</h1> -->
+            <div class="icons" id="icons">
+				      <a href="mailto: ios@vit.ac.in" target="_blank">
+                <i class="fa fa-envelope"></i>
+              </a>
+              <a href="https://www.facebook.com/vitios/" target="_blank">
+                <i class="fa fa-facebook"></i>
+              </a>
+              <a href="https://www.linkedin.com/company/adgvit/" target="_blank">
+                <i class="fa fa-linkedin"></i>
+							</a>
+							<br>
+              <a href="https://www.instagram.com/adgvit/" target="_blank">
+                <i class="fa fa-instagram"></i>
+              </a>
+              <a href="https://medium.com/adg-vit" target="_blank">
+                <i class="fa fa-medium"></i>
+              </a>
+              <a href="https://github.com/ADG-VIT" target="_blank">
+                <i class="fa fa-github"></i>
+              </a>
+            </div>
+            
+						<!-- <div class="mode-toggle">
+						<label>
+							<input class='toggle-checkbox' type='checkbox' id="toggle"></input>
+								<div class='toggle-slot'>
+									<div class='sun-icon-wrapper'>
+									<div class="iconify sun-icon" data-icon="feather-sun" data-inline="false"></div>
+									</div>
+									<div class='toggle-button'></div>
+									<div class='moon-icon-wrapper'>
+									<div class="iconify moon-icon" data-icon="feather-moon" data-inline="false"></div>
+									</div>
+								</div>
+						</label>
+						</div> -->
+					</div>
+				</div>
+      </div>
+
+      <div class="copyright">
+				<p>
+					Developed by ADG | &copy;
+					<script>
+						document.write(new Date().getFullYear());
+					</script>
+					All rights reserved.
+				</p>
+			</div>
+    </div>
+  <!-- End Footer -->
+    </section>
+
  </body>
  </html>
+ <script>
+      var piemenu = new wheelnav("piemenu");
+
+ piemenu.spreaderRadius = 40;
+ piemenu.clockwise = false;
+ piemenu.animatetime = 1500;
+ piemenu.wheelRadius = piemenu.wheelRadius * 0.83;
+ piemenu.sliceAngle = 360 / 10;
+
+piemenu.createWheel();
+ 
+      function changeData(id) {
+        if (id == 1) {
+          document.getElementById("domain").innerHTML = "Open <br> Innovation";
+          document.getElementById("desc").innerText =
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  ";
+          document
+            .getElementById("img1")
+            .setAttribute(
+              "src",
+              "https://res.cloudinary.com/dvmabxibf/image/upload/v1616079640/ic_lightbulb_outline_48px_2_dlx0je.png"
+            );
+        } else if (id == 2) {
+          document.getElementById("domain").innerHTML =
+            "Future <br> Technology";
+          document.getElementById("desc").innerText =
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  ";
+          document
+            .getElementById("img1")
+            .setAttribute(
+              "src",
+              "https://res.cloudinary.com/dvmabxibf/image/upload/v1616079640/ic_healing_48px_1_asccch.png"
+            );
+        } else if (id == 3) {
+          document.getElementById("domain").innerText = "Agriculture";
+          document.getElementById("desc").innerText =
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  ";
+          document
+            .getElementById("img1")
+            .setAttribute(
+              "src",
+              "https://res.cloudinary.com/dvmabxibf/image/upload/v1616079640/handout_2_nfxpkm.png"
+            );
+        } else if (id == 4) {
+          document.getElementById("domain").innerHTML =
+            "Social <br> Responsibility";
+          document.getElementById("desc").innerText =
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  ";
+          document
+            .getElementById("img1")
+            .setAttribute(
+              "src",
+              "https://res.cloudinary.com/dvmabxibf/image/upload/v1616079640/handout_1_wfnqol.png"
+            );
+        } else if (id == 5) {
+          document.getElementById("domain").innerText = "Healthcare";
+          document.getElementById("desc").innerText =
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  ";
+          document
+            .getElementById("img1")
+            .setAttribute(
+              "src",
+              "https://res.cloudinary.com/dvmabxibf/image/upload/v1616079640/ic_healing_48px_2_ma7kvf.png"
+            );
+        }
+}
+ </script>
