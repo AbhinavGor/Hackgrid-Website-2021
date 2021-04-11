@@ -16,18 +16,23 @@
  </head>
  <body>
     <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+    <script>
+      function topFunction() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      };
+    </script>
      <section class="home">
         <nav class="navbar">
             <div class="logo">
                 <img class="adg-logo" src="Assets/adglogo2 1.png" alt="ADG Logo" title="ADG Logo">
             </div>
             <ul class="nav-links">
-                <li><a href="#">ABOUT US</a></li>
-                <li><a href="#">TRACKS</a></li>
-                <li><a href="#">TIMELINE</a></li>
-                <li><a href="#">SPONSORS</a></li>
-                <li><a href="#">FAQS</a></li>
-                <li><a href="#">CONTACT US</a></li>
+                <li><a href="#about-us">ABOUT US</a></li>
+                <li><a href="#tracks">TRACKS</a></li>
+                <li><a href="#timeline">TIMELINE</a></li>
+                <li><a href="#sponsors">SPONSORS</a></li>
+                <li><a href="#faq">FAQS</a></li>
+                <li><a href="#contact">CONTACT US</a></li>
             </ul>
             <div class="burger">
                 <div class="line1"></div>
@@ -38,11 +43,32 @@
         <div class="hackgrid-img">
             <img class="hackgrid" src="Assets/Group 762.png" alt="Hackgrid" title="Hackgrid">
         </div>
+        <div class="countdown" id="cf">
+          <p class="text">Hack Starts in : </p>
+          <div class="timer">
+            <div class="time">
+              <span><p class="timer" id="days"></p></span>
+              <p class="unit">DAYS</p>
+            </div>
+            <div class="time">
+              <span><p class="timer" id="hours"></p></span>
+              <p class="unit">HOURS</p>
+            </div>
+            <div class="time">
+              <span><p class="timer" id="mins"></p></span>
+              <p class="unit">MINUTES</p>
+            </div>
+            <div class="time">
+              <span><p class="timer" id="secs"></p></span>
+              <p class="unit">SECONDS</p>
+            </div>
+          </div>
+      </div>
         <div class="register">
             <a href="#" class="register-btn">Register Now</a>
         </div>
     </section>
-    <section class="about-us">
+    <section class="about-us" id="about-us">
         <div class="container">
             <!--1-->
             <div class="box">
@@ -53,7 +79,7 @@
             <!--2-->
             <div class="box">
                 <div class="content">
-                    <p>08Apr-10Apr</p>
+                    <p>30Apr-02May</p>
                     <p>Mark the Dates</p>
                 </div>
             </div>
@@ -109,7 +135,7 @@
             </div>
         </div>
     </section>
-    <section class="tracks">
+    <section class="tracks" id="tracks">
         <h1 class="heading">Tracks</h1>
    <div class="main">
           <div
@@ -178,7 +204,7 @@
 
    </div>
     </section>
-     <section class="timeline">
+     <section class="timeline" id="timeline">
         <h1 class="sectionHead">Timeline</h1>
         <div class="timelineBody">
             <div class="timelineContent">
@@ -196,7 +222,7 @@
             </div>
         </div>
     </section>
-       <section class="sponsors">
+       <section class="sponsors" id="sponsors">
       <div class="heading">Sponsors</div>
       <div class="items">
         <div class="card1" ><img src="Assets/docker_logo.png"></div>
@@ -237,7 +263,7 @@
             </div>            
         </div>
     </section>
-    <section class="footer1">
+    <section class="footer1" id="contact">
             <!-- Footer Start -->
 		<div class="footer" id="footer">
               <style scoped>
