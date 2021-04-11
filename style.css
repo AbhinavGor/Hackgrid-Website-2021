@@ -322,8 +322,11 @@ ul li a:hover {
 
 @media screen and (max-width: 570px) {
   .hackgrid {
-    margin-top: 7vh;
-    width: 65%;
+    margin-top: 9vh;
+    width: 75%;
+  }
+  .countdown {
+    width: 35%;
   }
 }
 
