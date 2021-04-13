@@ -52,14 +52,14 @@ body {
   width: 100%;
 }
 
-ul {
+.nav-links {
   display: flex;
   flex-grow: 1;
   width: 70%;
   justify-content: space-around;
 }
 
-ul li {
+.nav-links li {
   list-style: none;
 }
 
@@ -94,8 +94,8 @@ ul li a:hover {
 }
 
 .hackgrid {
-  margin-top: 5vh;
-  width: 40%;
+  margin-top: 10vh;
+  width: auto;
 }
 
 .countdown {
@@ -130,7 +130,6 @@ ul li a:hover {
 
 .unit {
   color: rgba(10, 132, 255, 0.55);
-  font-size: 10px;
 }
 
 .timer {
@@ -140,6 +139,16 @@ ul li a:hover {
 .time span {
   font-size: 40px;
 }
+
+/* .time {
+  color: #0A84FF;
+  font-size: 40px;
+}
+
+.units {
+  color: rgba(10, 132, 255, 0.55);
+
+} */
 
 .register {
   background-color: #0a84ff65;
@@ -313,28 +322,11 @@ ul li a:hover {
   transition: all 0.5s ease;
 }
 
-@media screen and (max-width: 790px) {
-  .hackgrid {
-    margin-top: 7vh;
-    width: 55%;
-  }
-}
-
-@media screen and (max-width: 570px) {
-  .hackgrid {
-    margin-top: 9vh;
-    width: 75%;
-  }
-  .countdown {
-    width: 35%;
-  }
-}
-
 @media screen and (max-width: 1071px) {
   body {
     overflow-x: hidden;
   }
-  ul {
+  .nav-links {
     position: absolute;
     right: 0px;
     height: 90vh;
@@ -348,7 +340,7 @@ ul li a:hover {
     transition: transform 0.5s ease-in;
   }
 
-  ul li {
+  .nav-links li {
     opacity: 0;
   }
 
@@ -391,7 +383,6 @@ ul li a:hover {
 #piemenu > svg {
   width: 120%;
   height: 120%;
-  left: -63%;
   margin: 0;
 }
 #piemenu {
@@ -544,7 +535,6 @@ a:hover {
   #piemenu > svg {
     width: 120%;
     height: 120%;
-    left: -63%;
     margin: 0;
   }
   .container1 {

@@ -16,6 +16,8 @@ function scrollFunction() {
   }
 }
 
+
+
 const navSlide = () => {
   const burger = document.querySelector(".burger");
   const nav = document.querySelector(".nav-links");
@@ -40,7 +42,7 @@ const navSlide = () => {
 
 navSlide();
 
-var countDownDate = new Date("Apr 13, 2021 15:00:30").getTime();
+var countDownDate = new Date("Apr 30, 2021 15:00:30").getTime();
 
 var myfunc = setInterval(function() {
 
