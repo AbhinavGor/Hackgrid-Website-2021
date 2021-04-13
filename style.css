@@ -15,7 +15,16 @@ body {
   scroll-behavior: smooth;
   background-color: #000;
 }
-
+#tracks,
+#timeline,
+#sponsors,
+#faq {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./Assets/Desktop\ -\ 13.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
 #myBtn {
   display: none;
   position: fixed;
@@ -68,7 +77,6 @@ body {
   margin-left: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
-
 }
 
 ul li a:link,
@@ -106,7 +114,7 @@ ul li a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 25%;
+  /* width: 25%; */
   margin: auto;
   padding: 10px 0 20px;
   margin-bottom: 10px;
@@ -133,7 +141,7 @@ ul li a:hover {
 }
 
 .timer {
-  color: #0A84FF;
+  color: #0a84ff;
 }
 
 .time span {
@@ -152,11 +160,12 @@ ul li a:hover {
 
 .register {
   background-color: #0a84ff65;
-  padding: 23px 10px;
+  padding: 22px 25px;
   border-radius: 15px;
-  width: 28.6%;
+  width: fit-content;
   height: 9%;
-  margin-left: 35.7%;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   font-size: 1.5rem;
 }
@@ -376,13 +385,18 @@ ul li a:hover {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 /* Tracks CSS */
+#tracks {
+  height: 100vh;
+}
 .main {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  padding: 2%;
 }
 #piemenu > svg {
-  width: 120%;
-  height: 120%;
+  width: 100%;
+  height: 100%;
   margin: 0;
 }
 #piemenu {
@@ -442,7 +456,14 @@ ul li a:hover {
   margin: auto;
   max-width: 650px;
   font-size: 1.2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 30px;
+  padding: 3%;
 }
+.container1:hover{ 
+    box-shadow:  0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 55, 0.19);
+    -webkit-transition:  box-shadow .6s ease-in;
+  }
 .img1 {
   height: 50px;
   width: 50px;
@@ -533,14 +554,15 @@ a:hover {
     width: 300px;
   }
   #piemenu > svg {
-    width: 120%;
-    height: 120%;
+    width: 100%;
+    height: 100%;
     margin: 0;
   }
   .container1 {
     max-width: 400px;
     margin: auto;
     padding: 2%;
+    margin-top: 3%;
   }
   .rtd {
     min-width: 100px;
@@ -557,7 +579,7 @@ a:hover {
 
 @media (max-width: 590px) {
   .container1 {
-      margin-top: 2%;
+    margin-top: 2%;
     padding: 2%;
   }
 }
@@ -629,8 +651,8 @@ a:hover {
 
 .faqCard {
   width: 30% !important;
-  color: #fbaabf;
-  background-color: #6a4d4d !important;
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
   border-radius: 30px;
   margin: 4%;
   padding: 4%;
@@ -705,8 +727,6 @@ a:hover {
 
   .faqCard {
     width: 90% !important;
-    color: #fbaabf;
-    background-color: #6a4d4d !important;
     border-radius: 30px;
     margin: 4%;
     padding: 4%;
